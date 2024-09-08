@@ -1,0 +1,692 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+/var/spool/slurm/job5917257/slurm_script: line 18: cd: /work/tc062/tc062/zhan7721/layer_wise_analysis_crossling: No such file or directory
+------------------NEXT SCRIPT: DE----------------------
+/work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-mehhbb8y because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing de: ml
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+Test Phase fold_1.pt: 
+Test loss: 0.0000, Test accuracy: 0.8958
+Macro F1-score: 0.8948
+Model performance on Angry speech (in test): 
+	Precision: 0.9167, Recall: 0.9167, F1_score: 0.9167
+Model performance on Happy speech (in test): 
+	Precision: 0.9167, Recall: 0.9167, F1_score: 0.9167
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 0.7500, F1_score: 0.8571
+Model performance on Sad speech (in test): 
+	Precision: 0.8000, Recall: 1.0000, F1_score: 0.8889
+
+Test Phase fold_2.pt: 
+Test loss: 0.0000, Test accuracy: 0.9792
+Macro F1-score: 0.9791
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+Model performance on Sad speech (in test): 
+	Precision: 0.9231, Recall: 1.0000, F1_score: 0.9600
+
+Test Phase fold_3.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:16<01:21, 16.26s/it]Testing:  50%|█████     | 3/6 [00:16<00:12,  4.29s/it]Testing:  83%|████████▎ | 5/6 [00:16<00:02,  2.13s/it]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 11.60it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 11.71it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 11.73it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 11.64it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 11.52it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 11.60it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 11.6Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+Test Phase fold_4.pt: 
+Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+de, ml, all folds layer accuracy: ['1.0000', '0.8958', '0.9792', '1.0000', '1.0000']
+de, ml, all emo precision: {'Angry': ['1.0000', '0.9167', '1.0000', '1.0000', '1.0000'], 'Happy': ['1.0000', '0.9167', '1.0000', '1.0000', '1.0000'], 'Neutral': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Sad': ['1.0000', '0.8000', '0.9231', '1.0000', '1.0000']}
+de, ml, all emo recall: {'Angry': ['1.0000', '0.9167', '1.0000', '1.0000', '1.0000'], 'Happy': ['1.0000', '0.9167', '1.0000', '1.0000', '1.0000'], 'Neutral': ['1.0000', '0.7500', '0.9167', '1.0000', '1.0000'], 'Sad': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']}
+de, ml, all emo f1score: {'Angry': ['1.0000', '0.9167', '1.0000', '1.0000', '1.0000'], 'Happy': ['1.0000', '0.9167', '1.0000', '1.0000', '1.0000'], 'Neutral': ['1.0000', '0.8571', '0.9565', '1.0000', '1.0000'], 'Sad': ['1.0000', '0.8889', '0.9600', '1.0000', '1.0000']}
+Confusion matrix of de ml:
+[[0.983 0.017 0.    0.   ]
+ [0.017 0.983 0.    0.   ]
+ [0.    0.    0.933 0.067]
+ [0.    0.    0.    1.   ]]
+0it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 11.63it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 11.59it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 11.34it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 11.49it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 11.56it/s]                                                      /work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-untghhza because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing de: cl
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 0.4792
+Macro F1-score: 0.4675
+Model performance on Angry speech (in test): 
+	Precision: 0.7273, Recall: 0.6667, F1_score: 0.6957
+Model performance on Happy speech (in test): 
+	Precision: 0.3333, Recall: 0.5833, F1_score: 0.4242
+Model performance on Neutral speech (in test): 
+	Precision: 0.5000, Recall: 0.5000, F1_score: 0.5000
+Model performance on Sad speech (in test): 
+	Precision: 0.5000, Recall: 0.1667, F1_score: 0.2500
+
+Test Phase fold_1.pt: 
+Test loss: 0.0000, Test accuracy: 0.4583
+Macro F1-score: 0.4473
+Model performance on Angry speech (in test): 
+	Precision: 0.6154, Recall: 0.6667, F1_score: 0.6400
+Model performance on Happy speech (in test): 
+	Precision: 0.2857, Recall: 0.5000, F1_score: 0.3636
+Model performance on Neutral speech (in test): 
+	Precision: 0.5000, Recall: 0.5000, F1_score: 0.5000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.1667, F1_score: 0.2857
+
+Test Phase fold_2.pt: 
+Test loss: 0.0000, Test accuracy: 0.4792
+Macro F1-score: 0.4723
+Model performance on Angry speech (in test): 
+	Precision: 0.8333, Recall: 0.4167, F1_score: 0.5556
+Model performance on Happy speech (in test): 
+	Precision: 0.3913, Recall: 0.7500, F1_score: 0.5143
+Model performance on Neutral speech (in test): 
+	Precision: 0.4000, Recall: 0.5000, F1_score: 0.4444
+Model performance on Sad speech (in test): 
+	Precision: 0.7500, Recall: 0.2500, F1_score: 0.3750
+
+Test Phase fold_3.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:13<01:07, 13.50s/it]Testing:  50%|█████     | 3/6 [00:13<00:10,  3.56s/it]Testing:  83%|████████▎ | 5/6 [00:13<00:01,  1.77s/it]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 13.60it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 13.51it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 13.51it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 18.58it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 19.06it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 18.41it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 13.3Test loss: 0.0000, Test accuracy: 0.5208
+Macro F1-score: 0.5248
+Model performance on Angry speech (in test): 
+	Precision: 0.8333, Recall: 0.4167, F1_score: 0.5556
+Model performance on Happy speech (in test): 
+	Precision: 0.4000, Recall: 0.6667, F1_score: 0.5000
+Model performance on Neutral speech (in test): 
+	Precision: 0.4545, Recall: 0.4167, F1_score: 0.4348
+Model performance on Sad speech (in test): 
+	Precision: 0.6364, Recall: 0.5833, F1_score: 0.6087
+
+Test Phase fold_4.pt: 
+Test loss: 0.0000, Test accuracy: 0.4583
+Macro F1-score: 0.3964
+Model performance on Angry speech (in test): 
+	Precision: 0.6250, Recall: 0.4167, F1_score: 0.5000
+Model performance on Happy speech (in test): 
+	Precision: 0.3913, Recall: 0.7500, F1_score: 0.5143
+Model performance on Neutral speech (in test): 
+	Precision: 0.0000, Recall: 0.0000, F1_score: 0.0000
+Model performance on Sad speech (in test): 
+	Precision: 0.5000, Recall: 0.6667, F1_score: 0.5714
+
+de, cl, all folds layer accuracy: ['0.4792', '0.4583', '0.4792', '0.5208', '0.4583']
+de, cl, all emo precision: {'Angry': ['0.7273', '0.6154', '0.8333', '0.8333', '0.6250'], 'Happy': ['0.3333', '0.2857', '0.3913', '0.4000', '0.3913'], 'Neutral': ['0.5000', '0.5000', '0.4000', '0.4545', '0.0000'], 'Sad': ['0.5000', '1.0000', '0.7500', '0.6364', '0.5000']}
+de, cl, all emo recall: {'Angry': ['0.6667', '0.6667', '0.4167', '0.4167', '0.4167'], 'Happy': ['0.5833', '0.5000', '0.7500', '0.6667', '0.7500'], 'Neutral': ['0.5000', '0.5000', '0.5000', '0.4167', '0.0000'], 'Sad': ['0.1667', '0.1667', '0.2500', '0.5833', '0.6667']}
+de, cl, all emo f1score: {'Angry': ['0.6957', '0.6400', '0.5556', '0.5556', '0.5000'], 'Happy': ['0.4242', '0.3636', '0.5143', '0.5000', '0.5143'], 'Neutral': ['0.5000', '0.5000', '0.4444', '0.4348', '0.0000'], 'Sad': ['0.2500', '0.2857', '0.3750', '0.6087', '0.5714']}
+Confusion matrix of de cl:
+[[0.517 0.483 0.    0.   ]
+ [0.167 0.65  0.167 0.017]
+ [0.    0.383 0.383 0.233]
+ [0.05  0.283 0.3   0.367]]
+9it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 13.54it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 13.63it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 13.72it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 13.73it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 13.69it/s]                                                      /work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-fvsdxmej because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing de: tl
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 0.9167
+Macro F1-score: 0.9174
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+Model performance on Happy speech (in test): 
+	Precision: 0.8333, Recall: 0.8333, F1_score: 0.8333
+Model performance on Neutral speech (in test): 
+	Precision: 0.8571, Recall: 1.0000, F1_score: 0.9231
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+
+Test Phase fold_1.pt: 
+Test loss: 0.0000, Test accuracy: 0.9167
+Macro F1-score: 0.9179
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+Model performance on Happy speech (in test): 
+	Precision: 0.9091, Recall: 0.8333, F1_score: 0.8696
+Model performance on Neutral speech (in test): 
+	Precision: 0.8000, Recall: 1.0000, F1_score: 0.8889
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+
+Test Phase fold_2.pt: 
+Test loss: 0.0000, Test accuracy: 0.8750
+Macro F1-score: 0.8741
+Model performance on Angry speech (in test): 
+	Precision: 0.7857, Recall: 0.9167, F1_score: 0.8462
+Model performance on Happy speech (in test): 
+	Precision: 0.9000, Recall: 0.7500, F1_score: 0.8182
+Model performance on Neutral speech (in test): 
+	Precision: 0.8571, Recall: 1.0000, F1_score: 0.9231
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.8333, F1_score: 0.9091
+
+Test Phase fold_3.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:12<01:04, 12.99s/it]Testing:  50%|█████     | 3/6 [00:13<00:10,  3.43s/it]Testing:  83%|████████▎ | 5/6 [00:13<00:01,  1.71s/it]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 12.04it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 11.80it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 12.22it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 12.66it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 12.69it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 12.61it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 12.6Test loss: 0.0000, Test accuracy: 0.9375
+Macro F1-score: 0.9372
+Model performance on Angry speech (in test): 
+	Precision: 0.8571, Recall: 1.0000, F1_score: 0.9231
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 0.8333, F1_score: 0.9091
+Model performance on Neutral speech (in test): 
+	Precision: 0.9231, Recall: 1.0000, F1_score: 0.9600
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+
+Test Phase fold_4.pt: 
+Test loss: 0.0000, Test accuracy: 0.8750
+Macro F1-score: 0.8752
+Model performance on Angry speech (in test): 
+	Precision: 0.9091, Recall: 0.8333, F1_score: 0.8696
+Model performance on Happy speech (in test): 
+	Precision: 0.8333, Recall: 0.8333, F1_score: 0.8333
+Model performance on Neutral speech (in test): 
+	Precision: 0.8000, Recall: 1.0000, F1_score: 0.8889
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.8333, F1_score: 0.9091
+
+de, tl, all folds layer accuracy: ['0.9167', '0.9167', '0.8750', '0.9375', '0.8750']
+de, tl, all emo precision: {'Angry': ['1.0000', '1.0000', '0.7857', '0.8571', '0.9091'], 'Happy': ['0.8333', '0.9091', '0.9000', '1.0000', '0.8333'], 'Neutral': ['0.8571', '0.8000', '0.8571', '0.9231', '0.8000'], 'Sad': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']}
+de, tl, all emo recall: {'Angry': ['0.9167', '0.9167', '0.9167', '1.0000', '0.8333'], 'Happy': ['0.8333', '0.8333', '0.7500', '0.8333', '0.8333'], 'Neutral': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Sad': ['0.9167', '0.9167', '0.8333', '0.9167', '0.8333']}
+de, tl, all emo f1score: {'Angry': ['0.9565', '0.9565', '0.8462', '0.9231', '0.8696'], 'Happy': ['0.8333', '0.8696', '0.8182', '0.9091', '0.8333'], 'Neutral': ['0.9231', '0.8889', '0.9231', '0.9600', '0.8889'], 'Sad': ['0.9565', '0.9565', '0.9091', '0.9565', '0.9091']}
+Confusion matrix of de tl:
+[[0.917 0.083 0.    0.   ]
+ [0.1   0.817 0.083 0.   ]
+ [0.    0.    1.    0.   ]
+ [0.    0.017 0.1   0.883]]
+9it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 12.73it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 12.66it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 12.60it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 12.70it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 12.73it/s]                                                      /work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-gu4f4hyd because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing de: tlen
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 0.7083
+Macro F1-score: 0.7226
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.6667, F1_score: 0.8000
+Model performance on Happy speech (in test): 
+	Precision: 0.5625, Recall: 0.7500, F1_score: 0.6429
+Model performance on Neutral speech (in test): 
+	Precision: 0.5000, Recall: 0.5833, F1_score: 0.5385
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.8333, F1_score: 0.9091
+
+Test Phase fold_1.pt: 
+Test loss: 0.0000, Test accuracy: 0.6458
+Macro F1-score: 0.6335
+Model performance on Angry speech (in test): 
+	Precision: 0.7778, Recall: 0.5833, F1_score: 0.6667
+Model performance on Happy speech (in test): 
+	Precision: 0.5000, Recall: 0.7500, F1_score: 0.6000
+Model performance on Neutral speech (in test): 
+	Precision: 0.5714, Recall: 0.3333, F1_score: 0.4211
+Model performance on Sad speech (in test): 
+	Precision: 0.7857, Recall: 0.9167, F1_score: 0.8462
+
+Test Phase fold_2.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:12<01:03, 12.60s/it]Testing:  33%|███▎      | 2/6 [00:12<00:21,  5.32s/it]Testing:  50%|█████     | 3/6 [00:12<00:08,  2.95s/it]Testing:  67%|██████▋   | 4/6 [00:13<00:03,  1.84s/it]Testing:  83%|████████▎ | 5/6 [00:13<00:01,  1.22s/it]Testing: 100%|██████████| 6/6 [00:13<00:00,  1.19it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 10.19it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 10.20it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 10.14it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  9.98it/s]Testing:  50%|█████     | 3/6 [00:00<00:00, 10.08it/s]Testing:  83%|███████Test loss: 0.0000, Test accuracy: 0.6042
+Macro F1-score: 0.6242
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.6667, F1_score: 0.8000
+Model performance on Happy speech (in test): 
+	Precision: 0.6364, Recall: 0.5833, F1_score: 0.6087
+Model performance on Neutral speech (in test): 
+	Precision: 0.3750, Recall: 0.7500, F1_score: 0.5000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.4167, F1_score: 0.5882
+
+Test Phase fold_3.pt: 
+Test loss: 0.0000, Test accuracy: 0.6875
+Macro F1-score: 0.6900
+Model performance on Angry speech (in test): 
+	Precision: 0.7857, Recall: 0.9167, F1_score: 0.8462
+Model performance on Happy speech (in test): 
+	Precision: 0.7273, Recall: 0.6667, F1_score: 0.6957
+Model performance on Neutral speech (in test): 
+	Precision: 0.3846, Recall: 0.4167, F1_score: 0.4000
+Model performance on Sad speech (in test): 
+	Precision: 0.9000, Recall: 0.7500, F1_score: 0.8182
+
+Test Phase fold_4.pt: 
+Test loss: 0.0000, Test accuracy: 0.7083
+Macro F1-score: 0.7243
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.6667, F1_score: 0.8000
+Model performance on Happy speech (in test): 
+	Precision: 0.7500, Recall: 0.5000, F1_score: 0.6000
+Model performance on Neutral speech (in test): 
+	Precision: 0.4545, Recall: 0.8333, F1_score: 0.5882
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.8333, F1_score: 0.9091
+
+de, tlen, all folds layer accuracy: ['0.7083', '0.6458', '0.6042', '0.6875', '0.7083']
+de, tlen, all emo precision: {'Angry': ['1.0000', '0.7778', '1.0000', '0.7857', '1.0000'], 'Happy': ['0.5625', '0.5000', '0.6364', '0.7273', '0.7500'], 'Neutral': ['0.5000', '0.5714', '0.3750', '0.3846', '0.4545'], 'Sad': ['1.0000', '0.7857', '1.0000', '0.9000', '1.0000']}
+de, tlen, all emo recall: {'Angry': ['0.6667', '0.5833', '0.6667', '0.9167', '0.6667'], 'Happy': ['0.7500', '0.7500', '0.5833', '0.6667', '0.5000'], 'Neutral': ['0.5833', '0.3333', '0.7500', '0.4167', '0.8333'], 'Sad': ['0.8333', '0.9167', '0.4167', '0.7500', '0.8333']}
+de, tlen, all emo f1score: {'Angry': ['0.8000', '0.6667', '0.8000', '0.8462', '0.8000'], 'Happy': ['0.6429', '0.6000', '0.6087', '0.6957', '0.6000'], 'Neutral': ['0.5385', '0.4211', '0.5000', '0.4000', '0.5882'], 'Sad': ['0.9091', '0.8462', '0.5882', '0.8182', '0.9091']}
+Confusion matrix of de tlen:
+[[0.7   0.117 0.167 0.017]
+ [0.    0.65  0.333 0.017]
+ [0.083 0.3   0.583 0.033]
+ [0.    0.    0.25  0.75 ]]
+█▎ | 5/6 [00:00<00:00, 10.06it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 10.08it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 10.09it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  9.73it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  9.91it/s]Testing:  50%|█████     | 3/6 [00:00<00:00, 10.09it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00, 10.09it/s]                                                      ------------------NEXT SCRIPT: CN----------------------
+/work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-xpet4ejr because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing cn: ml
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 0.9583
+Macro F1-score: 0.9583
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+Model performance on Happy speech (in test): 
+	Precision: 0.9231, Recall: 1.0000, F1_score: 0.9600
+Model performance on Neutral speech (in test): 
+	Precision: 0.9231, Recall: 1.0000, F1_score: 0.9600
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+
+Test Phase fold_1.pt: 
+Test loss: 0.0000, Test accuracy: 0.9583
+Macro F1-score: 0.9590
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+Model performance on Neutral speech (in test): 
+	Precision: 0.8571, Recall: 1.0000, F1_score: 0.9231
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+
+Test Phase fold_2.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:12<01:03, 12.78s/it]Testing:  33%|███▎      | 2/6 [00:12<00:21,  5.33s/it]Testing:  50%|█████     | 3/6 [00:13<00:08,  2.95s/it]Testing:  67%|██████▋   | 4/6 [00:13<00:03,  1.83s/it]Testing:  83%|████████▎ | 5/6 [00:13<00:01,  1.21s/it]Testing: 100%|██████████| 6/6 [00:13<00:00,  1.19it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  9.35it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00,  9.33it/s]Testing:  50%|█████     | 3/6 [00:00<00:00,  9.29it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00,  9.29it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00,  9.36it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  9.24it/s]                                                      Testing: Test loss: 0.0000, Test accuracy: 0.9583
+Macro F1-score: 0.9583
+Model performance on Angry speech (in test): 
+	Precision: 0.9167, Recall: 0.9167, F1_score: 0.9167
+Model performance on Happy speech (in test): 
+	Precision: 0.9167, Recall: 0.9167, F1_score: 0.9167
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+Test Phase fold_3.pt: 
+Test loss: 0.0000, Test accuracy: 0.9792
+Macro F1-score: 0.9791
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+Model performance on Happy speech (in test): 
+	Precision: 0.9231, Recall: 1.0000, F1_score: 0.9600
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+Test Phase fold_4.pt: 
+  0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  9.20it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00,  9.15it/s]Testing:  50%|█████     | 3/6 [00:00<00:00,  9.21it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00,  9.32it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00,  9.28it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  9.27it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  8.67it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00,  9.02it/s]Testing:  50%|█████     | 3/6 [00:00<00:00,  9.16it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00,  9.18it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00,  9.22it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  9.24it/s]                                                      Testing:   0%|     Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+cn, ml, all folds layer accuracy: ['0.9583', '0.9583', '0.9583', '0.9792', '1.0000']
+cn, ml, all emo precision: {'Angry': ['1.0000', '1.0000', '0.9167', '1.0000', '1.0000'], 'Happy': ['0.9231', '1.0000', '0.9167', '0.9231', '1.0000'], 'Neutral': ['0.9231', '0.8571', '1.0000', '1.0000', '1.0000'], 'Sad': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']}
+cn, ml, all emo recall: {'Angry': ['0.9167', '1.0000', '0.9167', '0.9167', '1.0000'], 'Happy': ['1.0000', '0.9167', '0.9167', '1.0000', '1.0000'], 'Neutral': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Sad': ['0.9167', '0.9167', '1.0000', '1.0000', '1.0000']}
+cn, ml, all emo f1score: {'Angry': ['0.9565', '1.0000', '0.9167', '0.9565', '1.0000'], 'Happy': ['0.9600', '0.9565', '0.9167', '0.9600', '1.0000'], 'Neutral': ['0.9600', '0.9231', '1.0000', '1.0000', '1.0000'], 'Sad': ['0.9565', '0.9565', '1.0000', '1.0000', '1.0000']}
+Confusion matrix of cn ml:
+[[0.95  0.05  0.    0.   ]
+ [0.017 0.967 0.017 0.   ]
+ [0.    0.    1.    0.   ]
+ [0.    0.    0.033 0.967]]
+     | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  9.29it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00,  9.34it/s]Testing:  50%|█████     | 3/6 [00:00<00:00,  9.32it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00,  9.25it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00,  9.25it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  9.30it/s]                                                      /work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-hf5bh86v because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing cn: cl
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 0.7500
+Macro F1-score: 0.6937
+Model performance on Angry speech (in test): 
+	Precision: 0.8000, Recall: 1.0000, F1_score: 0.8889
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 0.1667, F1_score: 0.2857
+Model performance on Neutral speech (in test): 
+	Precision: 0.7692, Recall: 0.8333, F1_score: 0.8000
+Model performance on Sad speech (in test): 
+	Precision: 0.6667, Recall: 1.0000, F1_score: 0.8000
+
+Test Phase fold_1.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:12<01:02, 12.59s/it]Testing:  50%|█████     | 3/6 [00:12<00:09,  3.32s/it]Testing:  83%|████████▎ | 5/6 [00:12<00:01,  1.65s/it]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 13.89it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 14.00it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 14.32it/s]                                                      /work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Test loss: 0.0000, Test accuracy: 0.7500
+Macro F1-score: 0.6504
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 0.0000, Recall: 0.0000, F1_score: 0.0000
+Model performance on Neutral speech (in test): 
+	Precision: 0.6316, Recall: 1.0000, F1_score: 0.7742
+Model performance on Sad speech (in test): 
+	Precision: 0.7059, Recall: 1.0000, F1_score: 0.8276
+
+Test Phase fold_2.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 14.49it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 14.16it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 14.33it/s]                                                      /work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Test loss: 0.0000, Test accuracy: 0.7292
+Macro F1-score: 0.6413
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+Model performance on Happy speech (in test): 
+	Precision: 0.0000, Recall: 0.0000, F1_score: 0.0000
+Model performance on Neutral speech (in test): 
+	Precision: 0.5217, Recall: 1.0000, F1_score: 0.6857
+Model performance on Sad speech (in test): 
+	Precision: 0.8571, Recall: 1.0000, F1_score: 0.9231
+
+Test Phase fold_3.pt: 
+Test loss: 0.0000, Test accuracy: 0.8958
+Macro F1-score: 0.8940
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.8333, F1_score: 0.9091
+Model performance on Happy speech (in test): 
+	Precision: 0.9000, Recall: 0.7500, F1_score: 0.8182
+Model performance on Neutral speech (in test): 
+	Precision: 0.8000, Recall: 1.0000, F1_score: 0.8889
+Model performance on Sad speech (in test): 
+	Precision: 0.9231, Recall: 1.0000, F1_score: 0.9600
+
+Test Phase fold_4.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 14.22it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 14.20it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 14.24it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 14.27it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 14.21it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 14.30it/s]                                                      /work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Test loss: 0.0000, Test accuracy: 0.7292
+Macro F1-score: 0.6334
+Model performance on Angry speech (in test): 
+	Precision: 0.8571, Recall: 1.0000, F1_score: 0.9231
+Model performance on Happy speech (in test): 
+	Precision: 0.0000, Recall: 0.0000, F1_score: 0.0000
+Model performance on Neutral speech (in test): 
+	Precision: 0.5500, Recall: 0.9167, F1_score: 0.6875
+Model performance on Sad speech (in test): 
+	Precision: 0.8571, Recall: 1.0000, F1_score: 0.9231
+
+cn, cl, all folds layer accuracy: ['0.7500', '0.7500', '0.7292', '0.8958', '0.7292']
+cn, cl, all emo precision: {'Angry': ['0.8000', '1.0000', '1.0000', '1.0000', '0.8571'], 'Happy': ['1.0000', '0.0000', '0.0000', '0.9000', '0.0000'], 'Neutral': ['0.7692', '0.6316', '0.5217', '0.8000', '0.5500'], 'Sad': ['0.6667', '0.7059', '0.8571', '0.9231', '0.8571']}
+cn, cl, all emo recall: {'Angry': ['1.0000', '1.0000', '0.9167', '0.8333', '1.0000'], 'Happy': ['0.1667', '0.0000', '0.0000', '0.7500', '0.0000'], 'Neutral': ['0.8333', '1.0000', '1.0000', '1.0000', '0.9167'], 'Sad': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']}
+cn, cl, all emo f1score: {'Angry': ['0.8889', '1.0000', '0.9565', '0.9091', '0.9231'], 'Happy': ['0.2857', '0.0000', '0.0000', '0.8182', '0.0000'], 'Neutral': ['0.8000', '0.7742', '0.6857', '0.8889', '0.6875'], 'Sad': ['0.8000', '0.8276', '0.9231', '0.9600', '0.9231']}
+Confusion matrix of cn cl:
+[[0.95  0.017 0.033 0.   ]
+ [0.083 0.183 0.517 0.217]
+ [0.    0.    0.95  0.05 ]
+ [0.    0.    0.    1.   ]]
+/work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-z_3tqvho because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing cn: twostage
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+Test Phase fold_1.pt: 
+Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+Test Phase fold_2.pt: 
+Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+Test Phase fold_3.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:12<01:01, 12.24s/it]Testing:  50%|█████     | 3/6 [00:12<00:09,  3.23s/it]Testing:  83%|████████▎ | 5/6 [00:12<00:01,  1.61s/it]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 14.33it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 14.39it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 14.35it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 14.05it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 14.26it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 14.35it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 14.3Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+Test Phase fold_4.pt: 
+Test loss: 0.0000, Test accuracy: 1.0000
+Macro F1-score: 1.0000
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Happy speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Neutral speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 1.0000, F1_score: 1.0000
+
+cn, twostage, all folds layer accuracy: ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']
+cn, twostage, all emo precision: {'Angry': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Happy': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Neutral': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Sad': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']}
+cn, twostage, all emo recall: {'Angry': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Happy': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Neutral': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Sad': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']}
+cn, twostage, all emo f1score: {'Angry': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Happy': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Neutral': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000'], 'Sad': ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000']}
+Confusion matrix of cn twostage:
+[[1. 0. 0. 0.]
+ [0. 1. 0. 0.]
+ [0. 0. 1. 0.]
+ [0. 0. 0. 1.]]
+2it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 14.25it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 14.32it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 13.41it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 13.89it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 14.00it/s]                                                      /work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-dxi7fr4l because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing cn: tlen
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 0.7500
+Macro F1-score: 0.7549
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.6667, F1_score: 0.8000
+Model performance on Happy speech (in test): 
+	Precision: 0.5556, Recall: 0.8333, F1_score: 0.6667
+Model performance on Neutral speech (in test): 
+	Precision: 0.7000, Recall: 0.5833, F1_score: 0.6364
+Model performance on Sad speech (in test): 
+	Precision: 0.9167, Recall: 0.9167, F1_score: 0.9167
+
+Test Phase fold_1.pt: 
+Test loss: 0.0000, Test accuracy: 0.6250
+Macro F1-score: 0.6130
+Model performance on Angry speech (in test): 
+	Precision: 0.6667, Recall: 0.6667, F1_score: 0.6667
+Model performance on Happy speech (in test): 
+	Precision: 0.4286, Recall: 0.2500, F1_score: 0.3158
+Model performance on Neutral speech (in test): 
+	Precision: 0.5000, Recall: 0.7500, F1_score: 0.6000
+Model performance on Sad speech (in test): 
+	Precision: 0.9091, Recall: 0.8333, F1_score: 0.8696
+
+Test Phase fold_2.pt: 
+Test loss: 0.0000, Test accuracy: 0.7292
+Macro F1-score: 0.7255
+Model performance on Angry speech (in test): 
+	Precision: 0.6667, Recall: 0.6667, F1_score: 0.6667
+Model performance on Happy speech (in test): 
+	Precision: 0.6364, Recall: 0.5833, F1_score: 0.6087
+Model performance on Neutral speech (in test): 
+	Precision: 0.6667, Recall: 0.6667, F1_score: 0.6667
+Model performance on Sad speech (in test): 
+	Precision: 0.9231, Recall: 1.0000, F1_score: 0.9600
+
+Test Phase fold_3.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:18<01:31, 18.30s/it]Testing:  50%|█████     | 3/6 [00:18<00:14,  4.81s/it]Testing:  83%|████████▎ | 5/6 [00:18<00:02,  2.38s/it]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 11.89it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 12.08it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 12.07it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 12.12it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 12.13it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 12.04it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 11.9Test loss: 0.0000, Test accuracy: 0.8333
+Macro F1-score: 0.8313
+Model performance on Angry speech (in test): 
+	Precision: 0.9091, Recall: 0.8333, F1_score: 0.8696
+Model performance on Happy speech (in test): 
+	Precision: 0.7273, Recall: 0.6667, F1_score: 0.6957
+Model performance on Neutral speech (in test): 
+	Precision: 0.7692, Recall: 0.8333, F1_score: 0.8000
+Model performance on Sad speech (in test): 
+	Precision: 0.9231, Recall: 1.0000, F1_score: 0.9600
+
+Test Phase fold_4.pt: 
+Test loss: 0.0000, Test accuracy: 0.7500
+Macro F1-score: 0.7539
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.6667, F1_score: 0.8000
+Model performance on Happy speech (in test): 
+	Precision: 0.6667, Recall: 0.5000, F1_score: 0.5714
+Model performance on Neutral speech (in test): 
+	Precision: 0.5500, Recall: 0.9167, F1_score: 0.6875
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.9167, F1_score: 0.9565
+
+cn, tlen, all folds layer accuracy: ['0.7500', '0.6250', '0.7292', '0.8333', '0.7500']
+cn, tlen, all emo precision: {'Angry': ['1.0000', '0.6667', '0.6667', '0.9091', '1.0000'], 'Happy': ['0.5556', '0.4286', '0.6364', '0.7273', '0.6667'], 'Neutral': ['0.7000', '0.5000', '0.6667', '0.7692', '0.5500'], 'Sad': ['0.9167', '0.9091', '0.9231', '0.9231', '1.0000']}
+cn, tlen, all emo recall: {'Angry': ['0.6667', '0.6667', '0.6667', '0.8333', '0.6667'], 'Happy': ['0.8333', '0.2500', '0.5833', '0.6667', '0.5000'], 'Neutral': ['0.5833', '0.7500', '0.6667', '0.8333', '0.9167'], 'Sad': ['0.9167', '0.8333', '1.0000', '1.0000', '0.9167']}
+cn, tlen, all emo f1score: {'Angry': ['0.8000', '0.6667', '0.6667', '0.8696', '0.8000'], 'Happy': ['0.6667', '0.3158', '0.6087', '0.6957', '0.5714'], 'Neutral': ['0.6364', '0.6000', '0.6667', '0.8000', '0.6875'], 'Sad': ['0.9167', '0.8696', '0.9600', '0.9600', '0.9565']}
+Confusion matrix of cn tlen:
+[[0.7   0.133 0.1   0.067]
+ [0.083 0.567 0.35  0.   ]
+ [0.067 0.183 0.75  0.   ]
+ [0.    0.05  0.017 0.933]]
+0it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 11.82it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 12.04it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00, 11.92it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00, 11.94it/s]Testing: 100%|██████████| 6/6 [00:00<00:00, 12.07it/s]                                                      ------------------NEXT SCRIPT: EN----------------------
+/work/tc062/tc062/zhan7721/.venv/hgf/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Matplotlib created a temporary cache directory at /dev/shm/zhan7721_5917257/matplotlib-jq9odwoo because the default path (/home/tc062/tc062/zhan7721/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Start testing en: ml
+
+Test Phase fold_0.pt: 
+Test loss: 0.0000, Test accuracy: 0.5417
+Macro F1-score: 0.5589
+Model performance on Angry speech (in test): 
+	Precision: 0.8333, Recall: 0.4167, F1_score: 0.5556
+Model performance on Happy speech (in test): 
+	Precision: 0.3333, Recall: 0.3333, F1_score: 0.3333
+Model performance on Neutral speech (in test): 
+	Precision: 0.3500, Recall: 0.5833, F1_score: 0.4375
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.8333, F1_score: 0.9091
+
+Test Phase fold_1.pt: 
+Test loss: 0.0000, Test accuracy: 0.5625
+Macro F1-score: 0.5868
+Model performance on Angry speech (in test): 
+	Precision: 1.0000, Recall: 0.5833, F1_score: 0.7368
+Model performance on Happy speech (in test): 
+	Precision: 0.5000, Recall: 0.3333, F1_score: 0.4000
+Model performance on Neutral speech (in test): 
+	Precision: 0.3462, Recall: 0.7500, F1_score: 0.4737
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.5833, F1_score: 0.7368
+
+Test Phase fold_2.pt: 
+Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:14<01:11, 14.32s/it]Testing:  33%|███▎      | 2/6 [00:14<00:23,  5.98s/it]Testing:  50%|█████     | 3/6 [00:14<00:09,  3.31s/it]Testing:  67%|██████▋   | 4/6 [00:14<00:04,  2.05s/it]Testing:  83%|████████▎ | 5/6 [00:14<00:01,  1.36s/it]Testing: 100%|██████████| 6/6 [00:14<00:00,  1.06it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  7.79it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00,  7.89it/s]Testing:  50%|█████     | 3/6 [00:00<00:00,  7.82it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00,  7.76it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00,  7.76it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  7.77it/s]                                                      Testing: Test loss: 0.0000, Test accuracy: 0.5833
+Macro F1-score: 0.5913
+Model performance on Angry speech (in test): 
+	Precision: 0.6923, Recall: 0.7500, F1_score: 0.7200
+Model performance on Happy speech (in test): 
+	Precision: 0.5000, Recall: 0.4167, F1_score: 0.4545
+Model performance on Neutral speech (in test): 
+	Precision: 0.3750, Recall: 0.5000, F1_score: 0.4286
+Model performance on Sad speech (in test): 
+	Precision: 0.8889, Recall: 0.6667, F1_score: 0.7619
+
+Test Phase fold_3.pt: 
+Test loss: 0.0000, Test accuracy: 0.4792
+Macro F1-score: 0.4854
+Model performance on Angry speech (in test): 
+	Precision: 0.6667, Recall: 0.6667, F1_score: 0.6667
+Model performance on Happy speech (in test): 
+	Precision: 0.7500, Recall: 0.2500, F1_score: 0.3750
+Model performance on Neutral speech (in test): 
+	Precision: 0.2857, Recall: 0.6667, F1_score: 0.4000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.3333, F1_score: 0.5000
+
+Test Phase fold_4.pt: 
+  0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  7.83it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00,  7.85it/s]Testing:  50%|█████     | 3/6 [00:00<00:00,  7.83it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00,  7.86it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00,  7.84it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  7.83it/s]                                                      Testing:   0%|          | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  7.81it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00,  7.83it/s]Testing:  50%|█████     | 3/6 [00:00<00:00,  7.78it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00,  7.83it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00,  7.85it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  7.87it/s]                                                      Testing:   0%|     Test loss: 0.0000, Test accuracy: 0.6042
+Macro F1-score: 0.5878
+Model performance on Angry speech (in test): 
+	Precision: 0.6429, Recall: 0.7500, F1_score: 0.6923
+Model performance on Happy speech (in test): 
+	Precision: 0.5000, Recall: 0.1667, F1_score: 0.2500
+Model performance on Neutral speech (in test): 
+	Precision: 0.4000, Recall: 0.6667, F1_score: 0.5000
+Model performance on Sad speech (in test): 
+	Precision: 1.0000, Recall: 0.8333, F1_score: 0.9091
+
+en, ml, all folds layer accuracy: ['0.5417', '0.5625', '0.5833', '0.4792', '0.6042']
+en, ml, all emo precision: {'Angry': ['0.8333', '1.0000', '0.6923', '0.6667', '0.6429'], 'Happy': ['0.3333', '0.5000', '0.5000', '0.7500', '0.5000'], 'Neutral': ['0.3500', '0.3462', '0.3750', '0.2857', '0.4000'], 'Sad': ['1.0000', '1.0000', '0.8889', '1.0000', '1.0000']}
+en, ml, all emo recall: {'Angry': ['0.4167', '0.5833', '0.7500', '0.6667', '0.7500'], 'Happy': ['0.3333', '0.3333', '0.4167', '0.2500', '0.1667'], 'Neutral': ['0.5833', '0.7500', '0.5000', '0.6667', '0.6667'], 'Sad': ['0.8333', '0.5833', '0.6667', '0.3333', '0.8333']}
+en, ml, all emo f1score: {'Angry': ['0.5556', '0.7368', '0.7200', '0.6667', '0.6923'], 'Happy': ['0.3333', '0.4000', '0.4545', '0.3750', '0.2500'], 'Neutral': ['0.4375', '0.4737', '0.4286', '0.4000', '0.5000'], 'Sad': ['0.9091', '0.7368', '0.7619', '0.5000', '0.9091']}
+Confusion matrix of en ml:
+[[0.633 0.1   0.25  0.017]
+ [0.083 0.3   0.617 0.   ]
+ [0.15  0.217 0.633 0.   ]
+ [0.    0.017 0.333 0.65 ]]
+     | 0/6 [00:00<?, ?it/s]Testing:  17%|█▋        | 1/6 [00:00<00:00,  7.81it/s]Testing:  33%|███▎      | 2/6 [00:00<00:00,  7.79it/s]Testing:  50%|█████     | 3/6 [00:00<00:00,  7.83it/s]Testing:  67%|██████▋   | 4/6 [00:00<00:00,  7.86it/s]Testing:  83%|████████▎ | 5/6 [00:00<00:00,  7.87it/s]Testing: 100%|██████████| 6/6 [00:00<00:00,  7.89it/s]                                                      
