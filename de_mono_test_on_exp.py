@@ -1,23 +1,33 @@
 import transformers
 from transformers import Wav2Vec2FeatureExtractor, Wav2Vec2Model
 import torch
-from torch import nn
 import torchaudio
 import datasets
 from datasets import load_from_disk
 from utils import *
-import random
-import numpy as np
 from tqdm import tqdm
-from torch.utils.data import DataLoader, Dataset
-from sklearn.metrics import accuracy_score, confusion_matrix
+from torch.utils.data import DataLoader
+from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 import argparse
+import os
 
-# load fine-tuned classification model
+CN_MODEL_NAME="TencentGameMate/chinese-wav2vec2-base"
+DE_MODEL_NAME="facebook/wav2vec2-base-de-voxpopuli-v2"
+EN_MODEL_NAME="facebook/wav2vec2-base-960h"
+DE_FOLD_DATASET_PATH="./saved_dataset/de_5fold"
+CN_FOLD_DATASET_PATH="./saved_dataset/cn_5fold"
+EN_FOLD_DATASET_PATH="./saved_dataset/en_5fold"
+DATASET_LABEL=['train', 'eval', 'test']
+FOLD_LABEL=['fold_0', 'fold_1', 'fold_2', 'fold_3', 'fold_4']
+EMOTION_LABEL={'Angry': 0, 'Happy': 1, 'Neutral': 2, 'Sad': 3}
+BATCH_SIZE=32
+DEVICE=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+ROOT_PATH=os.getcwd()
 DEVICE=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 EMOTION_LABEL={'Angry': 0, 'Happy': 1, 'Neutral': 2, 'Sad': 3}
+
 # load models
 cn_model = Wav2Vec2Model.from_pretrained(CN_MODEL_NAME, output_hidden_states=True).to(DEVICE)
 de_model = Wav2Vec2Model.from_pretrained(DE_MODEL_NAME, output_hidden_states=True).to(DEVICE)
@@ -26,19 +36,14 @@ cn_featext = Wav2Vec2FeatureExtractor.from_pretrained(CN_MODEL_NAME)
 de_featext = Wav2Vec2FeatureExtractor.from_pretrained(DE_MODEL_NAME)
 en_featext = Wav2Vec2FeatureExtractor.from_pretrained(EN_MODEL_NAME)
 # my model path
-de_monoling = torch.load("/work/tc062/tc062/zhan7721/layer_wise_analysis_current/trained_cls_model/de_trained_de_tested_de/0730_layer4.pt").to(DEVICE)
+de_monoling = torch.load("./trained_cls_model/de_trained_de_tested_de/0730_layer4.pt").to(DEVICE)
 
 # load dataset
 de_dataset = load_from_disk("./saved_dataset/de_exp_test")
 
-# resample de data
-tj_dataset = tj_dataset.cast_column("audio", datasets.Audio(sampling_rate=16000))
+# resample de data and map text labels to numbers
 de_dataset = de_dataset.cast_column("audio", datasets.Audio(sampling_rate=16000))
-
-# map text labels to numbers
-cn_dataset = cn_dataset.map(map_labels)
 de_dataset = de_dataset.map(map_labels)
-en_dataset = en_dataset.map(map_labels)
 
 def collate_fn_mean_pool(batch=1):
     for item in batch:
@@ -66,12 +71,6 @@ def load_dataset(dataset_split, dataset_name):
     if dataset_name == "de":
         print(f"Loading {dataset_name} {dataset_split} data...")
         ds = DataLoader(de_dataset[dataset_split], batch_size=1, shuffle=True, collate_fn=collate_fn_mean_pool) 
-    elif dataset_name == "cn":
-        print(f"Loading {dataset_name} {dataset_split} data...")
-        ds = DataLoader(cn_dataset[dataset_split], batch_size=1, shuffle=True, collate_fn=collate_fn_mean_pool)
-    elif dataset_name == "en": 
-        print(f"Loading {dataset_name} {dataset_split} data...")
-        ds = DataLoader(en_dataset[dataset_split], batch_size=1, shuffle=True, collate_fn=collate_fn_mean_pool) 
     else:
         raise ValueError(f"NO dataset named {dataset_name}.")
     
@@ -86,15 +85,6 @@ def select_model(condition_name):
     if condition_name == "mono":
         tgt_layer = 4
         return de_monoling, tgt_layer
-    elif condition_name == "f_cross":
-        tgt_layer = 10
-        return de_crossling_former, tgt_layer
-    elif condition_name == "c_cross":
-        tgt_layer = 5
-        return de_crossling_current, tgt_layer    
-    elif condition_name == "l2": 
-        tgt_layer = 4
-        return de_l2_en, tgt_layer
     else:
         raise ValueError(f"NO condition named {condition_name}.")
     

@@ -163,8 +163,8 @@ if __name__ == "__main__":
     parser.add_argument('-t', '--train', type=str, required=True, help='Training datasets: de, cn or en')
     parser.add_argument('-e', '--eval', type=str, required=True, help='Evaluation datasets: de, cn or en')
     parser.add_argument('-T', '--test', type=str, required=True, help='Test datasets: de, cn or en')
-    parser.add_argument('-l', '--layer', type=str, help='which layer to add LoRA. Give index')
-    parser.add_argument('-E', '--everylayer', action="store_true", help='LoRA for every attention layer')
+    parser.add_argument('-l', '--layer', type=str, help='which layer to add LoRA. Give layer index')
+    parser.add_argument('-E', '--everylayer', action="store_true", help='LoRA for every attention layer, or only for the target layer')
     parser.print_help()
 
     args = parser.parse_args()
