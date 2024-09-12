@@ -45,9 +45,6 @@ To use this repository:
   python some_script.py --help
   ```
 
-## License
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
 ## Contact
 Zhichen Han - Z.Han-19@sms.ed.ac.uk
 
