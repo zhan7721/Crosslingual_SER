@@ -13,7 +13,7 @@ To use this repository:
 
 * install requirements
   ```sh
-  pip install requirements.txt
+  pip install -e requirements.txt
   ```
 
 * prepare selected data (see split_id; the code uses privately stored data in HuggingFace)
