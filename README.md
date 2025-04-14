@@ -13,11 +13,35 @@ To use this repository:
 
 * install requirements
   ```sh
-  pip install -e requirements.txt
+  pip install -r requirements.txt
   ```
 
-* prepare selected data (see split_id; the code uses privately stored data in HuggingFace)
+* prepare selected data (see split_id for selected speech)
+  
+  German (DE): PAVOQUE
 
+  ```
+  https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-4
+  https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-3
+  https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-2
+  https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-1
+  https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-0
+  ```  
+
+  Chinese (CN): ESD
+
+  ```
+  https://huggingface.co/datasets/zhan7721/cn-esd-5fold-4
+  https://huggingface.co/datasets/zhan7721/cn-esd-5fold-3
+  https://huggingface.co/datasets/zhan7721/cn-esd-5fold-2
+  https://huggingface.co/datasets/zhan7721/cn-esd-5fold-1
+  https://huggingface.co/datasets/zhan7721/cn-esd-5fold-0
+  ```
+
+  English (EN): IEMOCAP (private)
+
+  English for SED: ZED (csv file only)
+  
 ## Train & test models
 
 1. Train models:
