@@ -18,7 +18,7 @@ To use this repository:
 
 * prepare selected data (see split_id for selected speech)
 
-  - You could visit my HuggingFace homepage [Link Text](https://huggingface.co/zhan7721) for PAVOQUE (DE) and Chinese datasets. IEMOCAP dataset is private only. 
+  - You could visit my [HuggingFace Homepage](https://huggingface.co/zhan7721) for PAVOQUE (DE) and Chinese datasets. IEMOCAP dataset is private only. 
   
 ## Train & test models
 
