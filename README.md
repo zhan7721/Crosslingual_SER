@@ -17,28 +17,8 @@ To use this repository:
   ```
 
 * prepare selected data (see split_id for selected speech)
-  
-  German (DE): PAVOQUE
 
-  [Link Text](https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-4)
-  [Link Text][https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-3]
-  [Link Text][https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-2]
-  [Link Text][https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-1]
-  [Link Text][https://huggingface.co/datasets/zhan7721/de-pavoque-5fold-0] 
-
-  Chinese (CN): ESD
-
-  ```
-  [Link Text][https://huggingface.co/datasets/zhan7721/cn-esd-5fold-4]
-  [Link Text][https://huggingface.co/datasets/zhan7721/cn-esd-5fold-3]
-  [Link Text][https://huggingface.co/datasets/zhan7721/cn-esd-5fold-2]
-  [Link Text][https://huggingface.co/datasets/zhan7721/cn-esd-5fold-1]
-  [Link Text][https://huggingface.co/datasets/zhan7721/cn-esd-5fold-0]
-  ```
-
-  English (EN): IEMOCAP (private)
-
-  English for SED: ZED (csv file only)
+  - You could visit my HuggingFace homepage [Link Text](https://huggingface.co/zhan7721) for PAVOQUE (DE) and Chinese datasets. IEMOCAP dataset is private only. 
   
 ## Train & test models
 
